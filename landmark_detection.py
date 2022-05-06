@@ -7,7 +7,7 @@ import cv2
 import dlib
 
 # Pre-trained shape predictor from iBUG 300-W dataset
-SHAPE_PREDICTOR = 'data/shape_predictor_68_face_landmarks.dat'
+SHAPE_PREDICTOR = '/content/drive/MyDrive/Copy of shape_predictor_68_face_landmarks.dat'
 debug_landmark_detection=False
 frontal_face_detector = dlib.get_frontal_face_detector()
 landmarks_predictor = dlib.shape_predictor(SHAPE_PREDICTOR)
@@ -50,9 +50,9 @@ def show_face_annotated(faces,landmarks, img):
                 cv2.circle(img, (x, y), 1, (0, 0, 255), -1)
 
         # show the output image with the face detections + facial landmarks
-        cv2.imshow("Output", img)
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
+#         cv2.imshow("Output", img)
+#         cv2.waitKey(0)
+#         cv2.destroyAllWindows()
 
 
 def detect_landmarks(img):
