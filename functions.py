@@ -105,7 +105,7 @@ def applymask(face2,hullPointsList2,morphedface):
     cv2.fillConvexPoly(mask, np.array(hullPointsList2), color=255)
     #show_images([mask])
     #mask=io.imread("test1_mask.png")
-    show_images([mask])
+#     show_images([mask])
     output=blend(face2,morphedface,mask,(0,-4),getCenter(hullPointsList2))
     #output = cv2.seamlessClone(morphedface, face2, mask, getCenter(hullPointsList2), cv2.NORMAL_CLONE)
     #output=process(morphedface, face2, mask)
