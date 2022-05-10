@@ -7,7 +7,7 @@ import cv2
 import dlib
 
 # Pre-trained shape predictor from iBUG 300-W dataset
-SHAPE_PREDICTOR = '/content/drive/MyDrive/Copy of shape_predictor_68_face_landmarks.dat'
+SHAPE_PREDICTOR = '/content/drive/MyDrive/shape_predictor_68_face_landmarks.dat'
 debug_landmark_detection=False
 frontal_face_detector = dlib.get_frontal_face_detector()
 landmarks_predictor = dlib.shape_predictor(SHAPE_PREDICTOR)
